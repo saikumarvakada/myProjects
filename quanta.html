@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class=" d-flex flex-row">
+        <div class="bg-container d-flex flex-column justify-content-center">
+            <div class="d-flex flex-row justify-content-center">
+                <img src="data:image/png;base64,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" class="image1" />
+            </div>
+            <h1 class="heading"> Kagami Diagnosis</h1>
+            <p class="paragraph"> by Kagami</p>
+            <div class="d-flex flex-row justify-content-start">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAdCAYAAADl208VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGxSURBVHgBvZjdcYMwEIQXOnAHlJAOok6iTkIpKSEdpISECqx04FRAdB5gDOgP3eLvwWDpxjurk3Y0Bg4wjuN1rMM8SeelPSBi/KNDHa600OtYjU6xIY9FJU3TuAPlb6jDeZ1bUaVftW6s5xuFKHW+5DdKO2RQz++B2h71DPJRaugd9fwcqH1FPU4+soaUYSAUGVKGwaJT0iELHWUHtT4MVjpNqkIOqX9coeOSSx+Gjte4e8l1yEDHrTBKe+hYtnXOkCYMVkIZNGEgLIsWNUQIA+EvV0AIA2GYX1IdstBT0iFtGAhufgkamg4pQyhpaNIxIOrEOmTAwWXme3BYDAVj26+cRGgHJXOUxiDpSJJe5i9tQMQQRASXmiSFgbDa1qEtZ8HBZeYZZ1RYJenKEDEMhCE2QQwDIdkhAx4uMdeDR9KQ9mYQFdqgvRk8srpaLYaIYRAUetCxZJ1ohyyI+CiNdYh1RoXd5fduiBwGQtAMOQyCOnOHDLjE/kfowWWXpLMhZhgILjLODIOgTntCGAi7rXBCGAhuOyAdsuDjAmPMMxrVaaaVY/O5TZ8zdLzGx3bsH/xWgz8MxiTTAAAAAElFTkSuQmCC" class="image2" />
+            </div>
+            <h1 class="heading"> Boosting performances for sales Professionals at every step of thier sales journey. </h1>
+            <div class="d-flex flex-row justify-content-end">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAdCAYAAADl208VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGxSURBVHgBvZjdcYMwEIQXOnAHlJAOok6iTkIpKSEdpISECqx04FRAdB5gDOgP3eLvwWDpxjurk3Y0Bg4wjuN1rMM8SeelPSBi/KNDHa600OtYjU6xIY9FJU3TuAPlb6jDeZ1bUaVftW6s5xuFKHW+5DdKO2RQz++B2h71DPJRaugd9fwcqH1FPU4+soaUYSAUGVKGwaJT0iELHWUHtT4MVjpNqkIOqX9coeOSSx+Gjte4e8l1yEDHrTBKe+hYtnXOkCYMVkIZNGEgLIsWNUQIA+EvV0AIA2GYX1IdstBT0iFtGAhufgkamg4pQyhpaNIxIOrEOmTAwWXme3BYDAVj26+cRGgHJXOUxiDpSJJe5i9tQMQQRASXmiSFgbDa1qEtZ8HBZeYZZ1RYJenKEDEMhCE2QQwDIdkhAx4uMdeDR9KQ9mYQFdqgvRk8srpaLYaIYRAUetCxZJ1ohyyI+CiNdYh1RoXd5fduiBwGQtAMOQyCOnOHDLjE/kfowWWXpLMhZhgILjLODIOgTntCGAi7rXBCGAhuOyAdsuDjAmPMMxrVaaaVY/O5TZ8zdLzGx3bsH/xWgz8MxiTTAAAAAElFTkSuQmCC" class="image2" />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAQCAYAAACm53kpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHnSURBVHgB5Zc/TuwwEMa/cRIaXsER8k4A7wQvK73iddBQ0MEJ4AIIryho4QTQbQl0FEiEEwAnIEeggIZsPMzsBiG22M14pTT8JCt/NHby2Z89NqFnRsf/isTRFkCbBM71HQOPTkpd18MdX1boEUJPnPti7dfKyhGYD+YGEp2+vr8P93z5gh5wnzfMvNY0fDQe850U1iLPD3LdxZKo+NU0KxeKn/7IwWqW3WkdLEFXPa4NzkPAAzO8PBZfjWBD/18qPmsMItGRJ8J613ix5cbELZFY9EymwPQF8nmNioDKOfwhIpM1RydFnobsGTEEHmwf3pYwYtHj1BKLghWNGY+x2MIzpE3mEQlDF0sbVj1OemIfHZHYv7BisP4sMkKbMGLV49p50ZUCdiztf0PSYw4jVj0OPxztgLJrsFjmEUZkla0QiawB5u/BqEenwH3XChJ7BiMhhGtE4sDmDrDqcWmKU00Ji4I1Jk3pAkYIdIVI6joZwohVj9O8LqvtYF6lNmcOEIHmcQrB7BwOONvxNxWMWPW4tlKVJPRbbvdm5nkpNhm2G6AKkSRN4+XS2c6B8fTW1B6RWPT0dhi6lL19kySenZubp3XkVXxfh6HeOuCT0cn/PJ04gtdlqCY5m6eZ4poCX8VsfZfhAzqSD5amTahuAAAAAElFTkSuQmCC" class="image3" />
+            </div>
+        </div>
+        <div class="bottom-card">
+            <div class="container">
+                <h1 class="form-heading">Add User</h1>
+                <form id="myForm">
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" />
+                        <p id="emailErrMsg" class="error-message"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password">password</label>
+                        <input type="password" class="form-control" id="password" />
+                        <p id="passwordErrMsg" class="error-message">
+
+                        </p>
+                    </div>
+
+                    <div>
+                        <p> Forgot password? <a href="" target="_blank" class="linkcolor"> Click here </a></p>
+
+                    </div>
+                    <button type="submit" class="btn button mb-3 w-100">login</button>
+                    <div>
+                        <p> Don't have an account? <a href="" target="_blank" class="linkcolor"> register here </a></p>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
